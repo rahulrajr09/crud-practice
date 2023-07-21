@@ -6,7 +6,7 @@ async function getBooksRoute (req,res) {
         console.log(result);
         res.send(result);
     } catch (err) {
-        res.send("Error occurred! Retry");
+        res.send("Error occurred! Retry ");
         console.log(err);
     }
 }
