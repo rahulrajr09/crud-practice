@@ -10,7 +10,7 @@ const db = process.env.DB_HOST;
 //db configuration
 mongoose.connect(db)
 .then(()=> {
-    console.log("DB connected!")
+    console.log("DB connected! ")
 })
 .catch((err)=>{
     console.log(err); 
