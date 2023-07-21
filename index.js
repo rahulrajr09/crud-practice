@@ -8,7 +8,7 @@ dotenv.config();
 
 const db = process.env.DB_HOST;
 //db configuration
-mongoose.connect(db)
+mongoose.connect(db )
 .then(()=> {
     console.log("DB connected! ")
 })
