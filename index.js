@@ -2,10 +2,13 @@ import express from 'express';
 import routes from './Routes/routes.js';
 import mongoose from "mongoose";
 import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
+dotenv.config();
 
 
+const db = process.env.DB_HOST;
 //db configuration
-mongoose.connect('mongodb://localhost:27017/books')
+mongoose.connect(db)
 .then(()=> {
     console.log("DB connected!")
 })
