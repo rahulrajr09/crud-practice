@@ -13,7 +13,7 @@ mongoose.connect(db )
     console.log("DB connected! ")
 })
 .catch((err)=>{
-    console.log(err); 
+    console.log(err  ); 
 })
 
 const app = express();
